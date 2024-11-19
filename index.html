@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekend Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            background-color: #f7f7f7;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 15%;
+            height: auto;
+            border-radius: 10px;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .message {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Treino canino com Gucci</h1>
+    <!-- Add your image here -->
+    <img src="doggos.jpg" alt="Decorative image for weekend booking">
+
+    <form action="/book" method="post">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="name">Nome do cão:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="time">Horas:</label>
+        <input type="time" id="time" name="time" required>
+
+        <label for="weekend">Escolhe o Fim de Semana:</label>
+        <select id="weekend" name="weekend" required>
+            <option value="2024-12-07">December 7-8</option>
+            <option value="2024-12-14">December 14-15</option>
+            <option value="2024-12-21">December 21-22</option>
+            <option value="2024-12-28">December 28-29</option>
+        </select>
+
+        <input type="submit" value="Book">
+    </form>
+
+    <div class="message">
+        <!-- Success or error messages would be displayed here after backend processing -->
+    </div>
+
+</body>
+</html>
